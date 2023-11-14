@@ -1,0 +1,214 @@
+table,tr,td,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+body{
+    background-image: url("https://img.freepik.com/premium-vector/abstract-certificate-frame-template-background_708751-243.jpg?size=626&ext=jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+}
+#formDiv{
+    margin-top: 300px;
+    margin-left:100px ;
+}
+b{
+    font-size: 22px;
+    text-transform:capitalize;
+}
+#userid{
+    height: 20px;
+    margin-top: -10px;
+    
+} 
+#id{
+    height: 22px;
+    margin-top: -10px;
+}
+#title{
+    height: 22px;
+    margin-top: -12px;
+}
+#completed{
+    height: 28px;
+    margin-right: 20px;
+    margin-top: -28px;
+} 
+#but{
+    margin-left: 70px;
+    width: 100px;
+}
+th{
+    background-color: rgb(197, 227, 227);
+    color: blue;
+}
+#pagination-container{
+    margin-left: 35%;
+}
+
+#myform{
+    padding: 50px;
+    
+    border: 2px solid;
+    width: 300px;
+    background-color: rgb(59, 127, 127);
+    display: grid;
+}
+#mydiv{
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 20px;
+   width: 80%;
+   margin-left: 10%;
+   
+}
+#caption{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.button-86 {
+  all: unset;
+  width : 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #03283b;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.delete-btn{
+    width: 70px;
+    margin:18px;
+    height:30px;
+    background-color:pink
+}
+.edit-btn{
+    color : 'black';
+    box-shadow:rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+@media only screen and (max-width: 600px) {
+    #mydiv {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+   form{
+    background-color: aqua;
+   }
+    #formDiv {
+        margin-top: 0%;
+        margin-left:20px;
+    }
+
+    #table-div {
+        margin: 0;
+    }
+
+    #myform {
+        width: 100%;
+        padding: 20px;
+            border: 2px solid;
+            width: 300px;
+            background-color: rgb(170, 216, 230);
+    }
+  #myform hr{
+        color: black;
+    }
+
+    table {
+        width: 100%;
+        margin-left: 0;
+    }
+    table,th,tr,td{
+        padding: 0%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: none;
+        overflow-x: hidden;
+    }
+
+    th {
+        font-size: 16px;
+    }
+
+    #pagination-container {
+        text-align: center;
+    }
+    .delete-btn{
+
+        margin:10px;
+        background-color:"pink"
+    }
+   .edit-btn{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   }
+   #id,#userid,#title{
+    width: 90%;
+   }
+   #pagination-container{
+    margin-left: 10%;
+}
+}

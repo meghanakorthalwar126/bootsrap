@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="htmltask.css">
+    <!-- <script src="./htmltask1.js" defer></script> -->
+    
+</head>
+<body>
+    <div id="mydiv">
+        <div id="formDiv">
+            <form action="" id="myform">
+                <b>Ui form for view and update</b><hr style="color: rgb(146, 165, 182);width: 300px;">
+                <label for="userid"> <b>user id</b></label><br>
+                <input type="text" name="" id="userid" placeholder="enter your user id" required><br>
+                <label for="id" ><b>id</b></label><br>
+                <input type="tel" name="" id="id" maxlength="2" placeholder="enter your id" required><br>
+                <label for="title"><b>Title</b></label><br>
+                <input type="text" name="" id="title" placeholder="enetr your title" required><br>
+                <label for="completed"><b>Completed</b></label>
+                <input type="checkbox" id="completed"><br>
+                <input type="hidden" id="recordId" name="recordId">
+                <button class="button-86" role="button" id="but" type="submit">submit</button>
+            </form>  
+                     
+        </div>
+        <div id="table-div">
+            <table id="datatable">
+                <caption id="caption">My Data Table</caption>
+                <tr >
+                    <th>User ID</th>
+                    <th >ID</th>
+                    <th>Title</th>
+                    <th>Completed</th>
+                    <th >delete</th>
+                    <th >update</th>
+                </tr>
+                <tbody id="tablebody">
+                    
+                </tbody>
+            </table> 
+        </div>
+      <div id="hidden"></div>
+        <div id="pagination-container">
+            <button id="prevPage">Previous</button>
+            <span id="pages"></span>
+            <button id="nextPage">Next</button>
+            <span id="currentPageSpan"></span>
+        </div>
+
+    </div> 
+    <script src="./htmltask1.js"></script>
+    <!-- <script src="./fetch.js"></script> -->
+
+</body>
+</html>
